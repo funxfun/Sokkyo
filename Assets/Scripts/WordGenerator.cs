@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-// using OneSignalSDK;
+using OneSignalSDK;
 
 public class WordGenerator : MonoBehaviour {
 
@@ -51,7 +51,7 @@ public class WordGenerator : MonoBehaviour {
 		amplitude.init("a9d5930b92947b5171639869f1fcb2ec");
 		Utils.LogEvent("OpenedApp");
 
-  		// OneSignalSDK.Initialize("c580bbdf-9748-4d91-bd20-eee5d8b3a50f");
+  		OneSignal.Default.Initialize("c580bbdf-9748-4d91-bd20-eee5d8b3a50f");
     }
 
     // Gets called when the player opens the notification.
